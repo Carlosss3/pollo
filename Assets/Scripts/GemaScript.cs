@@ -14,6 +14,10 @@ public class GemaScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.transform.tag == "Player")
 				Application.LoadLevel ("Nivel 01");
+
+		Debug.Log ("Tocando Gema");
 		}
+
 }
